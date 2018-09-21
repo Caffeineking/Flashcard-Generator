@@ -1,7 +1,7 @@
 module.exports = ClozeCard;
 
-function ClozeCard(fullText, cloze, partial){
+function ClozeCard(fullText, cloze){
     this.cloze = cloze;
     this.fullText = fullText;
-    this.partial= fullText.replace("George Washington", "......");
+    this.partial= fullText.replace(cloze, "......");
 }
